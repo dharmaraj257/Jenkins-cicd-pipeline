@@ -1,7 +1,7 @@
 
-# Jenkins Projects
+# Automation Jenkins cicd pipeline Using GitHub Webhooks 
 
-Automate Project deployment the usage of Jenkins, GitHub Webhooks & set up on Apache and nginx server
+Automate Project deployment with the usage of Jenkins, and GitHub Webhooks & set up on Apache and nginx servers. whenever the user updates data in GitHub it automatically updates in the browser using the  Ci cd pipeline 
 
 ## Step 1: Install Jenkins on AWS by following the steps mentioned in the link below:
 
@@ -21,7 +21,7 @@ https://www.jenkins.io/doc/book/installing/linux/
 
 &nbsp;
 
-## Step 3: Add a Web hook.
+## Step 3: Add a Webhook.
 
 1.	Log in to GitHub and click the project repository.
 2.	Then go to settings find webhooks and click webhooks.
@@ -29,7 +29,7 @@ https://www.jenkins.io/doc/book/installing/linux/
 4.	Copy your Jenkins URL in the section of the payload URL then add it after url/github-webhook/ ().
 5.	Select content type application/json.
 6.	In which events would you like to trigger this webhook? Select option let me select individual events.
-7.	In this option you have to select 2 triggers and click add webhook.
+7.	In this option you have to select 2 triggers and click Add webhook.
 
  &nbsp;1. Pull requests
 

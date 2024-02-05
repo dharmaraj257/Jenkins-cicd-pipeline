@@ -1,9 +1,9 @@
 
 # Jenkins Projects
 
-A brief description of what this project does and who it's for
+Automate Project deployment the usage of Jenkins, GitHub Webhooks & set up on Apache and nginx server
 
-Step 1: Install Jenkins on AWS by following the steps mentioned in the link below:
+## Step 1: Install Jenkins on AWS by following the steps mentioned in the link below:
 
 1.	Install Java 
 2.	Install Jenkins 
@@ -12,7 +12,7 @@ https://www.jenkins.io/doc/book/installing/linux/
 &nbsp;
 
 
-Step 2: Log into Jenkins port and Create a pipeline.
+## Step 2: Log into Jenkins port and Create a pipeline.
 
 1.	Click new item, give the name Automated- pipeline, and select freestyle project click ok. 
 2.	Give a description and select source code management as git.
@@ -21,7 +21,7 @@ Step 2: Log into Jenkins port and Create a pipeline.
 
 &nbsp;
 
-Step 3: Add a Web hook.
+## Step 3: Add a Web hook.
 
 1.	Log in to GitHub and click the project repository.
 2.	Then go to settings find webhooks and click webhooks.
@@ -39,14 +39,14 @@ Step 3: Add a Web hook.
 9.	Automatically built will start to work.
 
 
-Step 4: Install server Apache and nginx.
+## Step 4: Install server Apache and nginx.
 ```
 1. sudo apt install apache2
 ````
     2. sudo apt install nginx.
 
 
-Step 5: Configure the pipeline and add build steps. We can copy content from the workspace folder to our Apache or Nginx server.
+## Step 5: Configure the pipeline and add build steps. We can copy content from the workspace folder to our Apache or Nginx server.
 
 1.	In Jenkins go to pipeline click configure and in build steps select Execute shell.
 2.	Add commands 
@@ -55,8 +55,8 @@ Step 5: Configure the pipeline and add build steps. We can copy content from the
 rm  /var/www/html/index.html
 cp -r  *  /var/www/html
 ```
-Now your application is deployed in the server to check copy paste your instance public IP http://3.95.186.211/
+Now your application is deployed in the server to check copy paste your instance public IP.
 
-output:
+# Output:
 
 ![Screenshot (125)](https://github.com/dharmaraj257/Jenkinscicd-pipeline/assets/100831265/ff1b42a3-d0f3-45fd-aa70-5097f58ffc86)
